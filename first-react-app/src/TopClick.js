@@ -6,7 +6,7 @@ const TopClick = () =>
     return(
         <div>
             <button id="top"
-                style={{ position: 'fixed', bottom: '80px', right: '25px' }} 
+                style={{ position: 'fixed', bottom: '80px', right: '22px' }} 
                 onClick={() => window.location.href ="#home"}
             >
                
