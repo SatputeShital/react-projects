@@ -2,13 +2,16 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import './style.css';
+// import lamp from './lamp.jpg';
 
 const MahindraCard= ()=>
 {
     return(
-        <div id="mahindra">
-        
-      <Card style={{marginTop:"50px",marginLeft:"50px", marginBottom:"50px", width: "700px", height:"370px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
+        <div id="mahindra" >
+          <div>
+      
+        {/* <img src={lamp} alt="Mahindra" style={{width:"100px", height:"100px"}}/> */}
+      <Card class="mahindraCard" style={{marginTop:"80px",marginLeft:"50px", marginBottom:"50px", width: "700px", height:"370px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
         {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
         <Card.Body>
           <Card.Title style={{color:"blue" , fontFamily:"Cambria",fontSize:"30px", fontWeight:"bold"}}>Mahindra & Mahindra</Card.Title>
@@ -24,10 +27,15 @@ const MahindraCard= ()=>
         </Card.Body>
         
         <Card.Body>
-          <Card.Link href="https://www.tatamotors.com/" style={{color:"blueviolet", fontFamily:"Cambria", fontSize:"20px"}}>Know More</Card.Link>
+          <Card.Link href="https://www.mahindra.com/" style={{color:"blueviolet", fontFamily:"Cambria", fontSize:"20px"}}>Know More</Card.Link>
          
         </Card.Body>
       </Card>
+      </div>
+      <div id="mahindraCardImg" style={{marginTop:"55px",marginLeft:"-80px", marginBottom:"50px", width: "700px", height:"420px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
+        {/* <h2> Mahindra & Mahindra</h2> */}
+       
+      </div>
     </div>
     );
 }

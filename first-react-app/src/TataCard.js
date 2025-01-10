@@ -6,8 +6,8 @@ import './style.css';
 const TataCard = () => {
   return (
     <div id="tata">
-        
-      <Card style={{marginTop:"50px",marginLeft:"50px", width: "700px", height:"370px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
+        <div >
+      <Card style={{marginTop:"80px",marginLeft:"50px", width: "700px", height:"370px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
         {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
         <Card.Body>
           <Card.Title style={{color:"blue" , fontFamily:"Cambria",fontSize:"30px", fontWeight:"bold"}}>Tata Motors</Card.Title>
@@ -27,6 +27,11 @@ const TataCard = () => {
          
         </Card.Body>
       </Card>
+      </div>
+      <div id="tataCardImg" style={{marginTop:"55px",marginLeft:"-80px", marginBottom:"0px", width: "700px", height:"420px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
+        {/* <h2> Mahindra & Mahindra</h2> */}
+       
+      </div>
     </div>
   );
 };

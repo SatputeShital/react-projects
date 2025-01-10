@@ -9,7 +9,7 @@ function MotorsNavbar() {
     return(
        <>
        
-           <Navbar bg="dark" data-bs-theme="dark">
+           <Navbar id="home" bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home" style={{fontFamily:"cambria"}}> Indian Motoring Marvels </Navbar.Brand>
           <Nav className="me-auto" style={{fontFamily:"cambria"}}>

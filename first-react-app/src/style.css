@@ -1,5 +1,75 @@
 #tata
 {
+    display:flex;
+    flex-direction: row;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(206, 228, 220);
+}
+#tataCardImg{
+    background-image: url("./Image/tata.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#mahindra{
+    display:flex;
+    flex-direction: row;
+}
+
+#mahindraCardImg{
+    background-image: url("./Image/mahindra-suvs-mahindra.webp");
+    background-size: cover;
+    background-position: center;
+}
+#maruti
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#marutiCardImg{
+    background-image: url("./Image/maruti.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#ashok
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#ashokCardImg{
+    background-image: url("./Image/ashok.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+#force
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#forceCardImg{
+    background-image: url("./Image/force.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#top
+{
+    background-image: url("./Image/home.png");
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: 50%;
+    border-style:groove solid;
+    width:100px;
+    height:100px;
+    background-color: rgb(175, 206, 195);
+    
 }
