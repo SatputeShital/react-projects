@@ -1,0 +1,47 @@
+.navbar {
+    background: #333;
+    padding: 1rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: #ddd;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    padding: 0.5rem;
+    list-style: none;
+    display: block;
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .dropdown-item:hover {
+    background: #555;
+  }
+  
