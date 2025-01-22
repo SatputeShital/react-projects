@@ -32,10 +32,14 @@
 }
 
 /* Logo */
-.navbar-logo img {
-    height: 50px; /* Adjust height */
-    width:50px;
-    cursor: pointer;
+.navbar-logo  {
+    margin-top: 2px;
+    height: 70px; /* Adjust height */
+    width:70px;
+    background-image: url("./Image/logoCodebgClean.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #search-icon

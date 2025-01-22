@@ -1,7 +1,7 @@
 import React from "react";
 // import {Form , Button} from "react";
 import SearchPage from "./SearchPage";
-import "./HomeContaine.css";
+import "./HomeContainer.css";
 
 const HomeContainer = () => {
   return (

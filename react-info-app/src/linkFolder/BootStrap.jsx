@@ -1,17 +1,16 @@
 import React from "react";
 
-
-const MongoDB =()=>
+const BootStrap =()=>
 {
     return(
         <>
         <div>
             <h2>
-               MongoDB Component
+                BootStrap Component
             </h2>
         </div>
         </>
     )
     
 }
-export default MongoDB;
+export default BootStrap;
