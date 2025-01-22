@@ -1,7 +1,8 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ShoppingCart from './ShoppingCart';
+import ShoppingCartCard from './ShoppingCartCard';
+// import ShoppingCart from './ShoppingCart';
 
 
 // import ProductApi from './ProductApi.jsx';
@@ -13,7 +14,8 @@ function App() {
       
       {/* <ProductApi /> */}
       {/* <ProductDisplay /> */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
+      <ShoppingCartCard/>
     </div>
   );
 }
