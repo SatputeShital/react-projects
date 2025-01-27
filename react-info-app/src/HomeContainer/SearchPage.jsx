@@ -9,6 +9,8 @@ const SearchPage = () => {
     { name: "CSS", path: "/css" },
     { name: "HTML", path: "/html" },
     { name: "Bootstrap", path: "/bootstrap" },
+    { name: "Mongodb", path: "/mongodb" },
+    { name: "React", path: "/react" },
   ];
 
   // State for managing search input and filtered items

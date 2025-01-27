@@ -1,4 +1,5 @@
-import LeftSidebar from "./Left-sidebarReact";
+import LearnReact from "./LearnReact";
+// import LeftSidebar from "./Left-sidebarReact";
 
 import "./main.css";
 import RightSidebar from "./Right-sidebar";
@@ -8,7 +9,7 @@ const React = () => {
     <>
       <div id="main">
         <div id="left-sidebar">
-          <LeftSidebar />
+         <LearnReact/>
         </div>
         <div id="info" style={{ backgroundColor: "pink" }}>
           <h2 style={{ color: "black" }}>React Component</h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import LeftSidebarCss from "./Left-sidebarCss";
+
 import RightSidebar from "./Right-sidebar";
 
 const CSS =()=>
@@ -10,7 +10,7 @@ const CSS =()=>
             <h2>
             <div id="main">
         <div id="left-sidebar">
-          <LeftSidebarCss />
+          
         </div>
         <div id="info" style={{ backgroundColor: "pink" }}>
           <h2 style={{ color: "black" }}>React Component</h2>

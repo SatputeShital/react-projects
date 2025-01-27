@@ -1,0 +1,90 @@
+
+
+
+#html{
+    display:flex;
+    flex-direction: row;
+}
+
+#htmlCardImg{
+    background-image: url("./Image/html.webp");
+    background-size: cover;
+    background-position: center;
+}
+#bootstrap
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#bootstrapCardImg{
+    background-image: url("./Image/Bootstrap.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#css
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#cssCardImg{
+    background-image: url("./Image/css.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#javascript
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#javascriptCardImg{
+    background-image: url("./Image/js.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#mongodb
+{
+    display:flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(206, 228, 220);
+}
+#mongodbCardImg{
+    background-image: url("./Image/mg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#react{
+    display:flex;
+    flex-direction: row;
+}
+
+#reactCardImg{
+    background-image: url("./Image/react.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#top
+{
+    background-image: url("./Image/home.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border-style:groove solid;
+    width:80px;
+    height:80px;
+    background-color: rgb(175, 206, 195);
+     
+} 

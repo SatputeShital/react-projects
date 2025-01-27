@@ -1,0 +1,100 @@
+h1
+{
+    color: brown;
+    
+    margin-bottom: 10px;
+}
+
+#main
+{ height:600px;
+    width:100vw;
+    margin: 0px;
+    color: blue;
+    background-image: url("bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+   flex-direction: row;
+  
+
+}
+
+#head-search
+{
+    margin: 80px;
+    margin-top: 50px;
+    
+}
+
+#bgimg
+{
+    background-image: url("./Image/1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 120px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+}
+#bgimg1
+{
+    background-image: url("./Image/2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 350px;
+    right: 550px;
+    width: 300px;
+    height: 300px;
+}
+
+
+#img1
+{
+    background-image: url("./Image/html.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 190px;
+    right: 180px;
+    width: 350px;
+    height: 500px;
+    border: solid ;
+    border-radius: 20px;
+    border-color: black;
+}
+#img2
+{
+    background-image: url("./Image/css.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 260px;
+    right: 480px;
+    width: 300px;
+    height: 250px;
+    border: solid;
+    border-radius: 20px;
+    border-color:black;
+}
+#img3
+{
+    background-image: url("./Image/lap.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 460px;
+    right: 380px;
+    width: 250px;
+    height: 200px;
+    border: solid;
+    border-radius: 20px;
+    border-color: black;
+}

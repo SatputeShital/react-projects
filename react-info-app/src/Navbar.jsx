@@ -8,6 +8,7 @@ import React from "react";
 // import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import { NavLink } from 'react-router-dom';
 import "./Navbar.css";
+// import Html from "./linkFolder/Html";
 // import Html from './linkFolder/Html.jsx';
 // import CSS from './linkFolder/CSS.jsx';
 // import JavaScript from './linkFolder/JavaScript.jsx';
@@ -32,19 +33,19 @@ const NavbarPage = () => {
               <Nav className="me-auto my-2 my-lg-0" navbarScroll>
                 <Nav.Link href="#action1">
                   <NavDropdown title="Tutorial" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">HTML</NavDropdown.Item>
+                    <NavDropdown.Item href="/html">HTML</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4"> CSS</NavDropdown.Item>
+                    <NavDropdown.Item href="/css"> CSS</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item href="/javascript">
                       JavaScript
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item href="/bootstrap">
                       BootStrap
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">MongoDB</NavDropdown.Item>
+                    <NavDropdown.Item href="/Mongodb">MongoDB</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Link>
                 <Nav.Link href="#action2">
@@ -54,7 +55,7 @@ const NavbarPage = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action4">
-                      {" "}
+                    
                       CSS Exercise & Quiz
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -136,10 +137,10 @@ const NavbarPage = () => {
 
                 <Button id="search-icon"></Button>
               </Form>
-              <div id="search2">
+              {/* <div id="search2">
            <input type='search' placeholder='search'></input>
            <image src="search-icon.png"></image>
-         </div>
+         </div> */}
             </Navbar.Collapse>
           </Container>
         </Navbar>

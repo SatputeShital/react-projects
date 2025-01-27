@@ -1,11 +1,11 @@
-import LeftSidebar from "../Left-sidebarReact";
+
 
 const React_Intro = () => {
   return (
     <>
       <div className="row">
         <div class="col-md-2 customDiv">
-         <LeftSidebar />
+       
         </div>
         <div class="col-md-8">
           <h2>React Introduction</h2>
