@@ -1,0 +1,31 @@
+#main{
+    background-color: antiquewhite;
+    /* display:flex;  no need to give it used bootstrap
+    flex-direction: row; */
+}
+
+#info
+{
+    width: 1100px;
+}
+/* #left-sidebar
+{
+    color: rgb(12, 12, 12);
+} */
+#lsidebar
+{
+    width: 300px;
+}
+#lsidebar ul{
+    text-align: left;
+}
+
+#r-sidebar
+{
+    width:300px;
+    height: 600px;
+    /* background-image:url("./Image/html.webp") ; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}

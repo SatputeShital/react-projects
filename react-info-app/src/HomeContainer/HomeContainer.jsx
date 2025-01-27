@@ -5,7 +5,7 @@ import "./HomeContainer.css";
 
 const HomeContainer = () => {
   return (
-    <>
+   
       <div id="main">
         <div id="head-search">
           <h1>Code Your Future with Us</h1>
@@ -20,7 +20,7 @@ const HomeContainer = () => {
           <div id="img3"></div>
         </div>
       </div>
-    </>
+    
   );
 };
 

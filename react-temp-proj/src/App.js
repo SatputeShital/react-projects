@@ -1,16 +1,13 @@
-
+// import logo from './logo.svg';
 import './App.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Header';
+
+import CodeMind from './Tutorials/CodeMind_Website';
 
 function App() {
   return (
     <div className="App">
-      
-      <Header />
-    
-      
+      <CodeMind/>
     </div>
   );
 }

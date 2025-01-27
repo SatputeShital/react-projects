@@ -93,7 +93,7 @@ class ShoppingCartCard extends Component {
                         </Card.Title>
                         <hr />
                         <Card.Text>{product.description}</Card.Text>
-                        <Card.Text>Price: ₹{product.price.toFixed(2)}</Card.Text>
+                        <Card.Text>Price: ${product.price.toFixed(2)}</Card.Text>
                         <Card.Text>Quantity: {cartItem.quantity}</Card.Text>
                       </Card.Body>
                     </div>
@@ -134,7 +134,7 @@ class ShoppingCartCard extends Component {
                   return (
                     <tr key={index}>
                       <td>{product.title}</td>
-                      <td>₹{product.price.toFixed(2)}</td>
+                      <td>${product.price.toFixed(2)}</td>
                       <td style={{
                         textAlign:"center"
                       }}>{cartItem.quantity}</td>
@@ -146,7 +146,7 @@ class ShoppingCartCard extends Component {
               </tbody>
             </table>
             <hr />
-            <h3>Grand Total: ₹{this.calculateTotal()}</h3>
+            <h3>Grand Total: ${this.calculateTotal()}</h3>
           </div>
         </div>
       </>

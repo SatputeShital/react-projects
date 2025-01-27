@@ -1,19 +1,21 @@
+
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchPage = () => {
   // Sample data to search through
   const items = [
-    
-    "JavaScript",
-    "CSS",
-    "HTML",
-   
-    "Bootstrap",
+    { name: "JavaScript", path: "/javascript" },
+    { name: "CSS", path: "/css" },
+    { name: "HTML", path: "/html" },
+    { name: "Bootstrap", path: "/bootstrap" },
   ];
 
   // State for managing search input and filtered items
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredItems, setFilteredItems] = useState(items);
+
+  const navigate = useNavigate();
 
   // Handle search input change
   const handleSearch = (e) => {
@@ -22,14 +24,19 @@ const SearchPage = () => {
 
     // Filter items based on query
     const results = items.filter((item) =>
-      item.toLowerCase().includes(query)
+      item.name.toLowerCase().includes(query)
     );
     setFilteredItems(results);
   };
 
+  // Handle item click to navigate
+  const handleItemClick = (path) => {
+    navigate(path); // Navigate to the specified route
+  };
+
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Lets take Step...</h1>
+      <h1 style={styles.title}>Let's take a Step...</h1>
       <input
         type="text"
         placeholder="Search items..."
@@ -37,14 +44,24 @@ const SearchPage = () => {
         onChange={handleSearch}
         style={styles.searchInput}
       />
-      {/* <button style={styles.search}>Search</button> */}
-      <ul style={styles.resultsList}>
-        {filteredItems.length > 0 ? (
-          filteredItems.map((item, index) => <li key={index}>{item}</li>)
-        ) : (
-          <li>No results found</li>
-        )}
-      </ul>
+      {/* Only display results if searchQuery is not empty */}
+      {searchQuery && (
+        <ul style={styles.resultsList}>
+          {filteredItems.length > 0 ? (
+            filteredItems.map((item, index) => (
+              <li
+                key={index}
+                style={styles.listItem}
+                onClick={() => handleItemClick(item.path)} // Navigate on click
+              >
+                {item.name}
+              </li>
+            ))
+          ) : (
+            <li style={styles.noResults}>No results found</li>
+          )}
+        </ul>
+      )}
     </div>
   );
 };
@@ -65,23 +82,43 @@ const styles = {
     width: "400px",
     borderRadius: "12px",
     border: "3px solid black",
-    // color:"Red"
   },
-  // search:{
-  //   marginleft:"0px",
-  //   height:"45px",
-  //   backgroundImage: `url("search-icon.png")`,
-  //   backgroundSize: "cover", // Ensures the image covers the entire area
-  //   backgroundPosition: "center", // Centers the image
-  //   backgroundRepeat: "no-repeat" ,// Prevents image repetition
-  //   border:"none",
-  //   borderRadius:"3px"
-  // },
   resultsList: {
     listStyleType: "none",
     padding: 0,
     marginTop: "20px",
   },
+  listItem: {
+    cursor: "pointer",
+    padding: "10px",
+    fontSize: "18px",
+    color: "blue",
+    textDecoration: "underline",
+  },
+  noResults: {
+    fontSize: "18px",
+    color: "red",
+  },
 };
 
 export default SearchPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

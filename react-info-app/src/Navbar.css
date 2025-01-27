@@ -1,0 +1,33 @@
+#header1
+{
+    
+  color: blue;
+  background-color: black;
+  font-size: 20px;
+  height: 70px;
+  
+}
+/* Logo */
+.navbar-logo  {
+    margin-top: 2px;
+    height: 70px; /* Adjust height */
+    width:70px;
+    background-image: url("./Image/logoCodebgClean.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #search-icon
+  {
+    
+    height: 35px;
+    width: 35px;
+    background-image: url("search-icon.png");
+    background-color: rgb(250, 245, 245);
+    border: none;
+    background-size: cover ;
+    background-position: center;
+  }
+
+  

@@ -31,10 +31,11 @@ class ProductDisplay extends Component {
               <div
                 key={product.id}
                 style={{
-                  border: "1px solid #ddd",
-                  padding: "10px",
+                  border: "3px solid black",
+                  marginLeft:"50px",
+                  padding: "6px",
                   borderRadius: "5px",
-                  width: "200px",
+                  width: "300px",
                   textAlign: "center",
                 }}
               >
@@ -44,12 +45,13 @@ class ProductDisplay extends Component {
                   style={{ width: "100px", height: "100px", objectFit: "cover" }}
                 />
                 <h5>{product.title}</h5>
+                <p>{product.description} </p>
                 <p>Price: ₹{product.price.toFixed(2)}</p>
                 <p>
-                  Rating: {product.rating?.rate || "N/A"} ⭐ ({product.rating?.count} reviews)
+                  Rating: {product.rating.rate }  ({product.rating?.count} reviews)
                 </p>
                 <p>{product.category}</p>
-                <p style={{ color: "red" }}>Limited Time Deal</p>
+                {/* <p style={{ color: "red" }}>Limited Time Deal</p> */}
                 <button style={{ padding: "5px 10px", background: "#007bff", color: "#fff", border: "none", borderRadius: "5px" }}>
                   Add to Cart
                 </button>

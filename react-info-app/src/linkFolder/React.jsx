@@ -1,16 +1,14 @@
-import React from "react";
-import LeftSidebarCss from "./Left-sidebarCss";
+import LeftSidebar from "./Left-sidebarReact";
+
+import "./main.css";
 import RightSidebar from "./Right-sidebar";
 
-const CSS =()=>
-{
-    return(
-        <>
-        <div>
-            <h2>
-            <div id="main">
+const React = () => {
+  return (
+    <>
+      <div id="main">
         <div id="left-sidebar">
-          <LeftSidebarCss />
+          <LeftSidebar />
         </div>
         <div id="info" style={{ backgroundColor: "pink" }}>
           <h2 style={{ color: "black" }}>React Component</h2>
@@ -26,10 +24,8 @@ const CSS =()=>
           <RightSidebar />
         </div>
       </div>
-            </h2>
-        </div>
-        </>
-    )
-    
-}
-export default CSS;
+    </>
+  );
+};
+
+export default React;
