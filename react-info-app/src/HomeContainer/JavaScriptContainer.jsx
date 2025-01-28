@@ -26,7 +26,7 @@ const JavaScriptContainer = () => {
         </Card.Body>
         
         <Card.Body>
-          <Card.Link href="#main" style={{color:"blueviolet", fontFamily:"Cambria", fontSize:"20px"}}>Know More</Card.Link>
+          <Card.Link href="/javascript" style={{color:"blueviolet", fontFamily:"Cambria", fontSize:"20px"}}>Know More</Card.Link>
          
         </Card.Body>
       </Card>
