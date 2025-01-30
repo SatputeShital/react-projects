@@ -4,7 +4,9 @@
 // import CompanyData from './class-component/CompanyData.jsx';
 // import DepartmentData from './class-component/DepartmentData';
 // import EmployeeData from './class-component/EmployeeData';
-import CompanyDataArray from "./class-component-array/CompanyDataArray";
+// import CompanyDataArray from "./class-component-array/CompanyDataArray";
+
+import ParentComp from "./array-obj-parentChildComm/ParentComp";
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
       {/* <CompanyData /> */}
       {/* <DepartmentData /> */}
       {/* <EmployeeData /> */}
-      <CompanyDataArray />
+      {/* <CompanyDataArray /> */}
+
+      <ParentComp/>
 
     </div>
   );

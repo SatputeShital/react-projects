@@ -9,7 +9,7 @@ const BootstrapContainer = () => {
     <div id="bootstrap" >
           <div>
       
-        {/* <img src={lamp} alt="Mahindra" style={{width:"100px", height:"100px"}}/> */}
+       
       <Card class="bootstrapCard" style={{marginTop:"80px",marginLeft:"50px", marginBottom:"50px", width: "700px", height:"370px" , border:"2px solid black", borderRadius:"10px" ,backgroundColor:"rgb(180, 206, 197)", boxShadow:"5px 5px 5px black" }}>
         {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
         <Card.Body>

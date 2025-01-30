@@ -1,23 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import Test from './test';
-import ReactDetails from './reactDetails-function';
+import App from './App';
+// import Test from './test';
+// import ReactDetails from './reactDetails-function';
 import reportWebVitals from './reportWebVitals';
-import ReactDetails1 from './ReactDetails-class';
+// import ReactDetails1 from './ReactDetails-class';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <h1>Hello World</h1> */}
-    <Test />
-    <h2>Using Finction Component</h2>
+  {/* <div>
+  <Test />
+    <h2>Using Function Component</h2>
     <ReactDetails />
     <h2>Using Class Component</h2>
     <ReactDetails1 />
+  </div> */}
+
     {/* <AddTwoNumber /> */}
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 
