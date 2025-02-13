@@ -34,6 +34,13 @@ let data_product=[
         new_price:110.07,
         old_price:135.30
     },
+    // {
+    //     id:5,
+    //     name:"Crop White top with short Jeans ",
+    //     image:p4_img,
+    //     new_price:110.07,
+    //     old_price:135.30
+    // },
 
 ];
 
