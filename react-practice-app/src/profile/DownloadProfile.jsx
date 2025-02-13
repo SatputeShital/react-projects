@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect , useRef, useState } from "react";
 import "./style.css";
 import { Container } from "react-bootstrap";
 import FormRange from "react-bootstrap/FormRange";
@@ -19,10 +19,11 @@ const DownloadProfile = () => {
     email: "",
     country: "",
     birthDate: "",
+    gender:"",
     profilePicture: null,
     favoriteColor: "#000000",
     aboutme: "",
-    experience: 50,
+   
     languages: {
       hindi: hvalue,
       sanskrit: cvalue,
@@ -72,30 +73,32 @@ const DownloadProfile = () => {
     console.log("Form Submitted:", formData);
   };
 
+  const nameRef = useRef();
+    // const emailRef = useRef();
+  useEffect(() => {
+    nameRef.current.focus();
+    // emailRef.current.focus();
+})
+
   // Download form data as a TXT file
-  const downloadTxtFile = () => {
-    const data = JSON.stringify(formData, null, 2);
-    const blob = new Blob([data], { type: "text/plain" });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "profileData.txt";
-    link.click();
-  };
+//   const downloadTxtFile = () => {
+//     const data = JSON.stringify(formData, null, 2);
+//     const blob = new Blob([data], { type: "text/plain" });
+//     const link = document.createElement("a");
+//     link.href = URL.createObjectURL(blob);
+//     link.download = "profileData.txt";
+//     link.click();
+//   };
 
   return (
     <div id="main">
+        
       <div id="img-range">
         <div id="imgUp">
-          <h2>Profile Image</h2>
-          <input
-            type="file"
-            onChange={handleImgFileChange}
-            accept="image/*"
-            style={{ color: "blue" }}
-          />
+          <u><h2 style={{marginBottom:"10px"}}>Profile Image</h2></u>
           {image && (
             <div>
-              <h3>Name:</h3>
+              
               <img
                 src={image}
                 alt="Uploaded Preview"
@@ -105,17 +108,28 @@ const DownloadProfile = () => {
                   borderRadius: "50%",
                 }}
               />
+              
+              <h5 style={{marginTop:"10px"}}>Name : {formData.name}</h5>
             </div>
           )}
+<hr />
+          <input
+            type="file"
+            onChange={handleImgFileChange}
+            accept="image/*"
+            style={{ color: "blue" , alignItems:"center"}}
+          />
+       
         </div>
         <div id="langrange">
           <Container>
-            <h3 className="mb-5" style={{ color: "#106C50" }}>
+          <u>  <h3 className="mb-5" style={{marginTop:"20px",paddingBottom:"0px" }}>
               Known Languages
-            </h3>
+            </h3></u>
+            
             <div>
               <div style={{ display: "flex", flexDirection: "row" }}>
-                <h5>Hindi: </h5>
+                <h5 style={{marginLeft:"20px"}}>Hindi: </h5>
                 <FormRange
                   value={hvalue}
                   onChange={(event) => {
@@ -123,12 +137,12 @@ const DownloadProfile = () => {
                     sethValue(value);
                     handleLanguageChange("hindi", value);
                   }}
-                  style={{ width: "280px", marginLeft: "50px" }}
+                  style={{ width: "255px", marginLeft: "50px" }}
                 />
                 <span>{hvalue}%</span>
               </div>
               <div style={{ display: "flex", flexDirection: "row" }}>
-                <h5>Sanskrit: </h5>
+                <h5 style={{marginLeft:"20px"}}>Sanskrit: </h5>
                 <FormRange
                   value={cvalue}
                   onChange={(event) => {
@@ -136,12 +150,12 @@ const DownloadProfile = () => {
                     setcValue(value);
                     handleLanguageChange("sanskrit", value);
                   }}
-                  style={{ width: "280px", marginLeft: "30px" }}
+                  style={{ width: "255px", marginLeft: "30px" }}
                 />
                 <span>{cvalue}%</span>
               </div>
               <div style={{ display: "flex", flexDirection: "row" }}>
-                <h5>English:</h5>
+                <h5 style={{marginLeft:"20px"}}>English:</h5>
                 <FormRange
                   value={jvalue}
                   onChange={(event) => {
@@ -149,7 +163,7 @@ const DownloadProfile = () => {
                     setjValue(value);
                     handleLanguageChange("english", value);
                   }}
-                  style={{ width: "280px", marginLeft: "40px" }}
+                  style={{ width: "255px", marginLeft: "40px" }}
                 />
                 <span>{jvalue}%</span>
               </div>
@@ -159,8 +173,8 @@ const DownloadProfile = () => {
       </div>
 
       <div id="details">
-        <h2>Profile Page</h2>
-        <Form onSubmit={handleSubmit}>
+        <u><h2>Profile Page</h2></u>
+        <Form id="form1" onSubmit={handleSubmit} >
           <Row>
             <Col md={6}>
               <Form.Group controlId="name">
@@ -171,6 +185,8 @@ const DownloadProfile = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
+                  ref={nameRef}
+                  style={{width:"600px"}}
                 />
               </Form.Group>
             </Col>
@@ -186,6 +202,8 @@ const DownloadProfile = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email"
+                 
+                  style={{width:"600px"}}
                 />
               </Form.Group>
             </Col>
@@ -200,6 +218,7 @@ const DownloadProfile = () => {
                   name="country"
                   value={formData.country}
                   onChange={handleChange}
+                  style={{width:"600px"}}
                 >
                   <option value="">Select country</option>
                   <option value="USA">USA</option>
@@ -215,16 +234,56 @@ const DownloadProfile = () => {
           <Row>
             <Col md={6}>
               <Form.Group controlId="birthDate">
-                <Form.Label>Date of Birth</Form.Label>
+                <Form.Label >Date of Birth</Form.Label>
                 <Form.Control
                   type="date"
                   name="birthDate"
                   value={formData.birthDate}
                   onChange={handleChange}
+                  style={{width:"600px"}}
                 />
               </Form.Group>
             </Col>
           </Row>
+
+          <Row>
+  <Col md={6}>
+    <Form.Group controlId="gender">
+      <Form.Label>Gender</Form.Label>
+      <div style={{ width: "600px", display: "flex", gap: "15px", alignItems: "center" }}>
+        <Form.Check
+          type="radio"
+          label="Male"
+          name="gender"
+          value="male"
+          checked={formData.gender === "male"}
+          onChange={handleChange}
+          inline
+        />
+        <Form.Check
+          type="radio"
+          label="Female"
+          name="gender"
+          value="female"
+          checked={formData.gender === "female"}
+          onChange={handleChange}
+          inline
+        />
+        <Form.Check
+          type="radio"
+          label="Other"
+          name="gender"
+          value="other"
+          checked={formData.gender === "other"}
+          onChange={handleChange}
+          inline
+        />
+      </div>
+    </Form.Group>
+  </Col>
+</Row>
+
+
 
           <Row>
             <Col md={6}>
@@ -235,6 +294,7 @@ const DownloadProfile = () => {
                   name="favoriteColor"
                   value={formData.favoriteColor}
                   onChange={handleChange}
+                  style={{width:"200px"}}
                 />
               </Form.Group>
             </Col>
@@ -250,18 +310,19 @@ const DownloadProfile = () => {
                   value={formData.aboutme}
                   onChange={handleChange}
                   placeholder="Tell us about yourself..."
+                  style={{width:"600px"}}
                 />
               </Form.Group>
             </Col>
           </Row>
 
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" style={{marginTop:"20px", width:"150px"}}>
             Submit
           </Button>
         </Form>
-        <Button variant="secondary" onClick={downloadTxtFile}>
+        {/* <Button variant="secondary" onClick={downloadTxtFile}>
           Download Profile Data as TXT
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
