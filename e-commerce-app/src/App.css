@@ -5,6 +5,7 @@
 .App {
   text-align: center;
   font-family: "Playfair Display", serif;
+  /* background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 90%); */
 }
 
 .App-logo {

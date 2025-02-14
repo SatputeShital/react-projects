@@ -3,6 +3,7 @@
     height: 100vh;
     background: linear-gradient(180deg, white, rgb(193, 136, 136) 60%);
     display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }  
 .hero-left{
