@@ -75,4 +75,7 @@ let data_product=[
 
 ];
 
+console.log(typeof(data_product));
+
+
 export default data_product;
