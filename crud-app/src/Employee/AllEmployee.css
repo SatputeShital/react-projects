@@ -1,0 +1,21 @@
+.allemployee
+{
+    margin-left: 150px;
+    border: 2px solid black;
+    height: 600px;
+    width: 1300px;
+}
+
+
+.addEmployeeBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 60px;
+
+}
+.editEmployeeBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 60px;
+    margin-top: 40px;
+}

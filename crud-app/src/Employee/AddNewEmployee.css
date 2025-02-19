@@ -1,0 +1,17 @@
+.newform{
+    margin-left: 150px;
+    border: 2px solid black;
+    height: 600px;
+    width: 1300px;
+}
+.newform input{
+    margin-left: 60px;
+}
+
+.newform label{
+    margin-top: 30px;
+    
+}
+.newform button{
+    margin-top: 30px;
+}
