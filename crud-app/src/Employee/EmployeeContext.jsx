@@ -1,20 +1,37 @@
-import  React,{createContext} from 'react';
 
-export const ShopContext=createContext(null);
+import  React,{createContext, useState} from 'react';
 
-const EmployeeContextProvider=(props)=>
+
+export const EmployeeContext=createContext();
+
+ export const EmployeeContextProvider=({children})=>
 {
-    let Employee={id:Date.now(),Name:'',Address:'', MobileNumber:'',Department:''
-       
-    }
+    const[employee, setEmployee] = useState([]);
 
-    const contextValue={Employee};
+    const addEmployee=(employeeVal)=>{
+        console.log('Inside Add Employee function'+employeeVal);
+        setEmployee([...employee, employeeVal])
+    };
+       
+    const updateEmployee=(id, updatedEmployee)=>{
+        setEmployee(
+          employee.map((emp)=> emp.id===id ? updatedEmployee : emp)
+        )
+      };
+
+
+       // ✅ Delete employee function
+  const deleteEmployee = (id) => {
+    setEmployee(employee.filter(emp => emp.id !== id)); // Remove only the selected employee
+  };
+
+   
 
     
     return(
-        <ShopContext.Provider value={contextValue}>
-            {props.children}
-        </ShopContext.Provider>
+        <EmployeeContext.Provider value={{employee, addEmployee, updateEmployee, deleteEmployee}}>
+            {children}
+        </EmployeeContext.Provider>
     )
 }
 

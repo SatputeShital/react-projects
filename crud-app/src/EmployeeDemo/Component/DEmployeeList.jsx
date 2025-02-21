@@ -1,9 +1,14 @@
 // src/components/EmployeeList.jsx
 import React from "react";
 import { useEmployeeContext } from "../Context/DEmployeeContext";
+// import Button from 'react-bootstrap/Button';
+// import { useNavigate } from 'react-router-dom';
+// import '../Component/AllEmployee.css'
+
 
 const EmployeeList = () => {
   const { employees } = useEmployeeContext();
+  // const navigate = useNavigate();
 
   return (
     <div className="mt-8">
@@ -32,6 +37,15 @@ const EmployeeList = () => {
           </tbody>
         </table>
       )}
+
+          {/* <div className='addEmployeeBtn'>
+      <Button variant="success" onClick={()=> navigate('/addEmployee')} >Add New Employee</Button>
+      </div>
+      <br />
+      <div className='editEmployeeBtn'>
+      <Button variant="success" onClick={()=> navigate('/editEmployee')} >Edit Employee</Button>
+      </div> */}
+      
     </div>
   );
 };
