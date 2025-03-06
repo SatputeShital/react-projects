@@ -8,6 +8,7 @@ import { Home } from './Components/Sections/Home';
 import { About } from './Components/Sections/About';
 import { Projects } from './Components/Sections/Project';
 import { Contact } from './Components/Sections/Contact';
+import { EducationExperience } from './Components/Sections/EducationExperience';
 
 function App() {
 
@@ -22,8 +23,10 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Home/>
         <About/>
+        <EducationExperience/>
         <Projects/>
         <Contact/>
+        
      </div>
     </>
   )
